@@ -1,0 +1,98 @@
+\documentclass{book}
+
+% page layout
+\usepackage[letterpaper, textwidth=5.0in, textheight=9.0in]{geometry}
+\setlength{\oddsidemargin}{3.25in} % making this up
+\addtolength{\oddsidemargin}{-0.5\textwidth}
+\setlength{\evensidemargin}{\oddsidemargin}
+\usepackage{setspace}
+\setstretch{1.08}
+\renewcommand{\MakeUppercase}[1]{\textsf{#1}} % hackety hack
+\sloppy\sloppypar\raggedbottom\frenchspacing
+
+% text macros
+\newcommand{\chapref}[1]{\chaptername~\ref{#1}}
+\newcommand{\figref}[1]{\figurename~\ref{#1}}
+
+\title{\bfseries Fundamental Astronomy for Physicists}
+\author{David W. Hogg}
+\date{March 2026}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+\chapter{Preface}
+This book is about the measurement of distant objects with telescopes.
+The question is:
+What is it, precisely and rigorously, that we can know about the Universe, given only observations with telescopes?
+Of course we won't \emph{only} have observations;
+we will also have knowledge of basic physics, and especially the relativities (special and general).
+We won't have any gravitational waves or neutrinos or other massless (or effectively massless) information carriers.
+This is a book about traditional electromagnetic-messenger astrophysics.
+That is, what does the study of light, impinging on an observatory, reveal about the cosmos?
+
+The target audience is physicists who want to understand the Universe and its contents, physically.
+My expectation is that you know and understand basic special relativity, and the rudiments of quantum mechanics (because, for example, light is both a particle and a wave).
+Basic undergraduate physics prepares the reader to read this book.
+
+I was motivated to start writing this book for a number of reasons:
+\begin{itemize}
+    \item HOGG: Dark matter yada yada.
+    \item HOGG: Great precision of the cosmological model...
+    \item HOGG: Coordinate systems in stellar dynamics
+    \item HOGG: Physicists get it consistently wrong...?
+\end{itemize}
+
+\paragraph{Acknowledgements:}
+It is a pleasure to thank
+  Mike~Blanton (Carnegie),
+  Doug~Finkbeiner (Harvard),
+  Gerry~Neugebauer (deceased), and
+  Ned~Wright (NASA)
+for conversations about these matters over the years.
+
+\tableofcontents
+\mainmatter
+\chapter{What does a telescope do?}
+When we first learn geometric optics in school, we learn how a telescope works.
+My version of the standard diagram is in \figref{fig:telescope}.
+The most important things about this \emph{highly idealized} diagram are the following:
+\begin{itemize}
+    \item Parallel rays entering the telescope aperture come to a focus at a single point on the focal plane.
+    \item Parallel lines coming from two distinct directions come to foci at two distinct points on the focal plane.
+\end{itemize}
+That is, the telescope maps incoming-photon \emph{angles} to focal-plane \emph{positions}.
+This standard diagram (\figref{fig:telescope}) does not capture several other important points about the (idealized) telescope.
+For example, it does not give any sense of the following:
+\begin{itemize}
+    \item The ideal telescope, which never absorbs any photons prior to their arrival at the focal plane, conserves photon phase-space density, or specific intensity, or surface brightness. This is the subject of \chapref{chap:intensity}.
+    \item There are critical diffraction effects that limit the angular resolution of the image and create other telescope-aperture effects in the focal plane. This is the subject of \chapref{chap:physical}.
+\end{itemize}
+The first of these points relates to unitarity in electromagnetism, and will end up giving us a definition of the concept of ``tranparency.''
+We'll expand a bit on the latter of these points right now.
+
+HOGG: quantum!
+
+\chapter{Intensity and transparency}\label{chap:intensity}
+HOGG: write
+
+\chapter{Fluxes and fluences}
+
+\chapter{Angles}
+
+\chapter{Celestial coordinate systems}
+
+\chapter{Parallaxes and proper motions}
+
+\chapter{Doppler shifts}
+
+\chapter{Foreground and background separations}
+
+\chapter{Instrument calibration}
+
+\chapter{Confusion}
+
+\chapter{Physical optics and interferometry}\label{chap:physical}
+
+\end{document}
