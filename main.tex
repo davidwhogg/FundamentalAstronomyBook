@@ -14,6 +14,13 @@
 \newcommand{\chapref}[1]{\chaptername~\ref{#1}}
 \newcommand{\figref}[1]{\figurename~\ref{#1}}
 
+% math macros
+\usepackage{amsmath, amsfonts, bm}
+\newcommand{\tv}[1]{\bm{#1}} % \tv is "three vector"
+
+% problem macros
+% HOGG: TBD
+
 \title{\bfseries Fundamental Astronomy for Physicists}
 \author{David W. Hogg}
 \date{March 2026}
@@ -23,6 +30,15 @@
 \maketitle
 \frontmatter
 \chapter{Preface}
+Almost everything we know about the cosmos---planets, stars, galaxies, large-scale structure, the Universe as a whole---has been inferred from the directions and wavelengths (or frequencies, or energies) of photons entering telescope apertures on or near the Earth.
+Or in more classical terms, everything we know has been inferred from statistics of the specific intensity of radiation---energy per time per solid angle per area per frequency---as a function of angle and frequency, again at the entrance aperture of an Earth-proximal telescope.
+Of course we have some information from gravitational waves, from neutrinos, from cosmic rays, and (in the Solar System) occasional launched probes and landers.
+But the vast majority of what we know comes from electromagnetic radiation hitting the detectors in the focal planes of telescopes.
+
+Astronomical evidence is (almost, with a few exceptions \cite{labgravity}) the only evidence we have ever had for the law of gravity and everything taking place in the gravitational sector.
+Kepler's laws, Newtonian gravity, general relativity, the dark energy (or cosmological constant), the existence of dark matter, the expansion history, the growth of cosmic large-scale structure, and the existence of dark energy were all discovered, refined, and informed almost entirely with astronomical observations using photons.
+Gravitational radiation has complicated this story, but only (so far) in the late stages of compact-object mergers, and even that has (so far) only confirmed the gravitational theory that we built entirely from electromagnetic observations with telescopes.
+
 This book is about the measurement of distant objects with telescopes.
 The question is:
 What is it, precisely and rigorously, that we can know about the Universe, given only observations with telescopes?
@@ -32,9 +48,13 @@ We won't have any gravitational waves or neutrinos or other massless (or effecti
 This is a book about traditional electromagnetic-messenger astrophysics.
 That is, what does the study of light, impinging on an observatory, reveal about the cosmos?
 
-The target audience is physicists who want to understand the Universe and its contents, physically.
+The target audience here is comprised of physicists who want to understand the Universe and its contents, physically.
+You, reader, want to measure something and you need astronomical techniques to do so.
+Or, perhaps, you want to understand how something incredibly remote, like a black hole or the dark matter, could be well understood and confidently known.
+This book will help you understand what has been done, what is possible, and how we will do it better in the future.
+
 My expectation is that you know and understand basic special relativity, and the rudiments of quantum mechanics (because, for example, light is both a particle and a wave).
-Basic undergraduate physics prepares the reader to read this book.
+Basic undergraduate physics fully prepares the reader to read this book.
 
 I was motivated to start writing this book for a number of reasons:
 \begin{itemize}
@@ -69,10 +89,14 @@ For example, it does not give any sense of the following:
     \item The ideal telescope, which never absorbs any photons prior to their arrival at the focal plane, conserves photon phase-space density, or specific intensity, or surface brightness. This is the subject of \chapref{chap:intensity}.
     \item There are critical diffraction effects that limit the angular resolution of the image and create other telescope-aperture effects in the focal plane. This is the subject of \chapref{chap:physical}.
 \end{itemize}
-The first of these points relates to unitarity in electromagnetism, and will end up giving us a definition of the concept of ``tranparency.''
+The first of these points relates to unitarity in electromagnetism, and will end up giving us a definition of the concept of \emph{tranparency}.
 We'll expand a bit on the latter of these points right now.
 
-HOGG: quantum!
+You can think of a telescope as a classical device or as a quantum device, and we might switch back and forth.
+If we think of the telescope as a quantum particle detector, then the incoming light can be seen as a phase-space density of photons, which is a function of 3-vector momenta $\tv{p}$.
+The photon momentum $\tv{p}$ in vacuum has the property $|\tv{p}|=E/c$, where $c$ is the speed of light, $E=h\,\nu$ is the photon energy, $h$ is Planck's constant, $\nu=c/\lambda$ is the photon frequency, and $\lambda$ is the photon wavelength.
+
+HOGG: coordinate system, transverse momentum, angles, localization on the focal plane, uncertainty principle.
 
 \chapter{Intensity and transparency}\label{chap:intensity}
 HOGG: write
@@ -86,6 +110,8 @@ HOGG: write
 \chapter{Parallaxes and proper motions}
 
 \chapter{Doppler shifts}
+
+\chapter{Distances and volume elements in cosmology}
 
 \chapter{Foreground and background separations}
 
